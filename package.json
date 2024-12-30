@@ -1,0 +1,14 @@
+{
+  "name": "@grist/tract-d-interactive-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.0",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  }
+}

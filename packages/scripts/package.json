@@ -1,0 +1,24 @@
+{
+  "name": "@grist/tract-d-interactive-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "tsc && node --env-file=.env dist/deploy.js",
+    "gen:pmtiles": "tsc && node dist/generate-pmtiles.js",
+    "store:pmtiles": "tsc && node --env-file=.env dist/store-pmtiles.js",
+    "store:png": "tsc && node --env-file=.env dist/store-png.js",
+    "store:styles": "tsc && node --env-file=.env dist/store-styles.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.714.0"
+  }
+}
